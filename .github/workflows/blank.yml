@@ -18,7 +18,8 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           #username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ vars.DOCKERHUB_TOKEN2 }}
+          #password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
         env:
